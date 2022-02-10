@@ -1,0 +1,45 @@
+plugins {
+    id 'localJavaPlugin'
+    id 'localJSweetPlugin'
+    id 'localFxPlugin'
+}
+
+dependencies {
+    NTRO_DEPENDANCIES.split(',').each {
+        implementation "ca.ntro:ntro_${it}:${NTRO_VERSION}"
+    }
+
+    implementation files('MON_NOM.jar')
+}
+
+eclipse {
+    classpath {
+        file {
+            whenMerged {
+                classpath ->
+
+                    def toRemove = []
+                    def toAdd = []
+
+                    entries.each {
+
+                        if(NTRO_DEPENDANCIES.split(',').any{dependancy -> it.path.contains("ntro_"+dependancy)}){
+                            toRemove += it
+                            toAdd += new org.gradle.plugins.ide.eclipse.model.Library(fileReference(file(it.publication.path)))
+                        }
+                    }
+
+                    entries.removeAll toRemove
+                    entries.addAll toAdd
+            }
+        }
+    }
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+   main = CLIENT_MAIN_CLASS
+   classpath = sourceSets.main.runtimeClasspath
+   jvmArgs('-Dfile.encoding=UTF-8')
+   jvmArgs('-Dsun.java2d.opengl=true')
+}
+
