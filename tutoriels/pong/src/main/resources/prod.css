@@ -1,0 +1,19 @@
+
+#vue-racine {
+
+    -fx-border-color:darkred;
+}
+
+#vue-file-attente {
+    -fx-border-color:darkblue;
+    
+    -fx-alignement: center ;
+}
+
+.gros-bouton {
+    -fx-font-size: 1.2em;
+}
+
+.gros-bouton:hover {
+    -fx-cursor: hand;
+}
