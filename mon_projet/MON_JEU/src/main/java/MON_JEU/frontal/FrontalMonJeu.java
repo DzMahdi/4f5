@@ -1,4 +1,4 @@
-package MON_JEU.frontal;
+package mon_jeu.frontal;
 
 import ca.ntro.app.frontend.FrontendFx;
 import ca.ntro.app.frontend.ViewRegistrarFx;
@@ -11,37 +11,35 @@ public class FrontalMonJeu implements FrontendFx {
 
 	@Override
 	public void createTasks(FrontendTasks tasks) {
-
+		
 		tasks.task("afficherFenetre")
-
-				.waitsFor(window())
-
-				.thenExecutes(inputs -> {
-
-					Window window = inputs.get(window());
-
-					window.show();
-
-				});
-
+		
+			.waitsFor(window())
+			
+			.thenExecutes(inputs ->{
+				
+				Window window = inputs.get(window());
+				
+				window.show();
+			});
+		
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void registerEvents(EventRegistrar registrar) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void registerViews(ViewRegistrarFx registrar) {
-		// TODO Auto-generated method stub
-
+		
+		registrar.registerStylesheet("/dev.css");
+		
 	}
 
 }

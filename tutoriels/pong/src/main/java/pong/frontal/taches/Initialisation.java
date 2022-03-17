@@ -12,13 +12,22 @@ import pong.frontal.vues.VueRacine;
 public class Initialisation {
 
 	public static void creerTaches(FrontendTasks tasks) {
-		afficherFenetre(tasks);
-
-		creerVueRacine(tasks);
-		creerVueFileAttente(tasks);
 		
-		installerVueRacine(tasks);
-		installerVueFileAttente(tasks);
+		tasks.taskGroup("Initialisation")
+		
+			.contains(subTasks -> {
+				
+				afficherFenetre(subTasks);
+
+				creerVueRacine(subTasks);
+				installerVueRacine(subTasks);
+				
+				creerVueFileAttente(subTasks);
+				installerVueFileAttente(subTasks);
+			});
+		
+		
+		
 		
 	}
 
@@ -97,10 +106,11 @@ public class Initialisation {
 					VueRacine vueRacine = inputs.get(created(VueRacine.class));
 
 					pong.frontal.vues.VueFileAttente vueFileAttente;
+					
 					Object VueFileAttente = vueFileAttente = inputs.get(created(VueFileAttente.class));
 
 					vueRacine.afficherSousVue(vueFileAttente);
-					
+
 				});
 
 	}

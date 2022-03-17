@@ -1,6 +1,6 @@
 rootProject.name = 'mon_projet'
 
-include 'MON_JEU'
+include 'mon_jeu'
 
 buildscript {
 
