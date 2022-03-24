@@ -1,0 +1,46 @@
+digraph "frontend" {
+edge ["dir"="forward"]
+graph ["rankdir"="LR","compound"="true","overlap"="false"]
+subgraph "cluster_Initialisation__container" {
+edge ["dir"="none"]
+graph ["margin"="40","style"="invis"]
+subgraph "cluster_Initialisation" {
+edge ["dir"="forward"]
+graph ["rankdir"="LR","label"="Initialisation","style"="filled","fillcolor"="gray","penwidth"="3.0","fontsize"="18.0"]
+"Initialisation_viewLoader[VueMaVue]" ["label"="viewLoader[VueMaVue]","style"="filled","fillcolor"="white"]
+"Initialisation_installerVueRacine" ["label"="installerVueRacine","style"="filled","fillcolor"="white"]
+"Initialisation_installerVueMaVue" ["label"="installerVueMaVue","style"="filled","fillcolor"="white"]
+"Initialisation_window" ["label"="window","style"="filled","fillcolor"="white"]
+"Initialisation_afficherFenetre" ["label"="afficherFenetre","style"="filled","fillcolor"="white"]
+"Initialisation_viewLoader[VueRacine]" ["label"="viewLoader[VueRacine]","style"="filled","fillcolor"="white"]
+"Initialisation_VueMaVue" ["label"="VueMaVue","style"="filled","fillcolor"="white"]
+"Initialisation_VueRacine" ["label"="VueRacine","style"="filled","fillcolor"="white"]
+}
+}
+subgraph "cluster_Navigation__container" {
+edge ["dir"="none"]
+graph ["margin"="40","style"="invis"]
+subgraph "cluster_Navigation" {
+edge ["dir"="forward"]
+graph ["rankdir"="LR","label"="Navigation","style"="filled","fillcolor"="gray","penwidth"="3.0","fontsize"="18.0"]
+"Navigation_event[EvtAfficherVueMaVue]" ["label"="event[EvtAfficherVueMaVue]","style"="filled","fillcolor"="white"]
+"Navigation_afficherVueFileAttente" ["label"="afficherVueFileAttente","style"="filled","fillcolor"="white"]
+"Navigation_event[EvtAfficherFileAttente]" ["label"="event[EvtAfficherFileAttente]","style"="filled","fillcolor"="white"]
+"Navigation_VueFileAttente" ["label"="VueFileAttente","style"="filled","fillcolor"="white"]
+"Navigation_afficherVueMaVue" ["label"="afficherVueMaVue","style"="filled","fillcolor"="white"]
+"Navigation_viewLoader[VueFileAttente]" ["label"="viewLoader[VueFileAttente]","style"="filled","fillcolor"="white"]
+}
+}
+"Initialisation_viewLoader[VueMaVue]" -> "Initialisation_VueMaVue" ["label"=""]
+"Initialisation_viewLoader[VueMaVue]" -> "Navigation_event[EvtAfficherVueMaVue]" ["label"="","ltail"="cluster_Initialisation","lhead"="cluster_Navigation","penwidth"="3"]
+"Navigation_event[EvtAfficherVueMaVue]" -> "Navigation_afficherVueMaVue" ["label"=""]
+"Navigation_event[EvtAfficherFileAttente]" -> "Navigation_afficherVueFileAttente" ["label"=""]
+"Navigation_VueFileAttente" -> "Navigation_afficherVueFileAttente" ["label"=""]
+"Navigation_viewLoader[VueFileAttente]" -> "Navigation_VueFileAttente" ["label"=""]
+"Initialisation_VueMaVue" -> "Initialisation_installerVueMaVue" ["label"=""]
+"Initialisation_window" -> "Initialisation_afficherFenetre" ["label"=""]
+"Initialisation_window" -> "Initialisation_installerVueRacine" ["label"=""]
+"Initialisation_viewLoader[VueRacine]" -> "Initialisation_VueRacine" ["label"=""]
+"Initialisation_VueRacine" -> "Initialisation_installerVueMaVue" ["label"=""]
+"Initialisation_VueRacine" -> "Initialisation_installerVueRacine" ["label"=""]
+}

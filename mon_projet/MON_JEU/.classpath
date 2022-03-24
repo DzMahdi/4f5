@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.7.30/a166ecad84482080b7f9b51692b2f84142117e8a/slf4j-nop-1.7.30-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.7.30/55d4c73dd343efebd236abfeb367c9ef41d55063/slf4j-nop-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet/jsweet-transpiler/3.0.0/e6287f53092a7415cb824a1b83be7d6170b95514/jsweet-transpiler-3.0.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet/jsweet-transpiler/3.0.0/d5bcc336df5ffc849c26ff966f4a38b4911bef26/jsweet-transpiler-3.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet/jsweet-core/6.3.0/66c3fd5af38864b83964b16d332b8be1cea30cc6/jsweet-core-6.3.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet/jsweet-core/6.3.0/6bab0dd4fd7e67f7926c4a22ffd7f16a8ea70bf1/jsweet-core-6.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17/a732c3f060069942ea4269d8c929ab32f57b3569/javafx-fxml-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17/8d79ed85fa9dde644d4b37d93a02a2ef2818769/javafx-fxml-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/524e01d068fbef60d149127a725920969d2e2045/javafx-controls-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/efc0f4edde079c22987064922530c67fa1350a9b/javafx-controls-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/524e01d068fbef60d149127a725920969d2e2045/javafx-controls-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/7116001b777530c89e5c7381d39a2c9268f71e7e/javafx-controls-17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/2ae36181c0f4322481ced656821e0f792407b114/javafx-media-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/6012cc30ced1539f167b64959cb9d6a4283f7aa7/javafx-media-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/c5d8a26d28bb271ac5fe667e27814829d73a6124/javafx-graphics-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/2c56d252b97eba8b42f049c6ce145172d744ce08/javafx-graphics-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/c5d8a26d28bb271ac5fe667e27814829d73a6124/javafx-graphics-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/616d987ba02a86196d7feca443677fff908d5737/javafx-graphics-17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/5bb56c62e0fe12829893645950137155d83903c/javafx-base-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/b63b9696f73009ca5002f49ec4db73576e2de168/javafx-base-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/5bb56c62e0fe12829893645950137155d83903c/javafx-base-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/1e6732190939254735dc2a88eca88c5c7ccc719d/javafx-base-17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/71a1fdefa224da50f1db6306ce609981e20186c9/slf4j-api-1.7.30-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.3/9c51853f855aca4ea31785f30385e980a58eaf4b/commons-text-1.3-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.3/9abf61708a66ab5e55f6169a200dbfc584b546d9/commons-text-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/8f1cb192e229bc4cd1c900c51171d96706e6d195/commons-lang3-3.9-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/122c7cee69b53ed4a7681c03d4ee4c0e2765da5/commons-lang3-3.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet.ext/typescript.java-ts.core/2.0.3/73318bfcd0935f66743cd784a59e5a2fd98c3ce5/typescript.java-ts.core-2.0.3-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet.ext/typescript.java-ts.core/2.0.3/aade1baef01809f56f34fb973a4c6a2f48467f4c/typescript.java-ts.core-2.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet.ext/sourcemap-builder/1.0.0/be481e3d7cd0dfb54178be2b6f1eb2f50a121c7b/sourcemap-builder-1.0.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.jsweet.ext/sourcemap-builder/1.0.0/28a8a49a1f7be1b8d1ecefa0a78e3bfc51ff2d35/sourcemap-builder-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/1b9adea7bbe0b251818f42fde0bd2988d7e5f20a/gson-2.8.6-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.martiansoftware/jsap/2.1/d17c260c8f5eb6e7d6bd75449a57edfeb53d2305/jsap-2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.0/f67e4e8e000dd9358871ce929e3eddc1d2946fd7/org.osgi.core-4.3.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.0/33a703395035eff7833a6a4292cce0e8daf231fd/org.osgi.core-4.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.minimal-json/minimal-json/0.9.4/a7f9afb2417b0126267435586bce893498bd8eff/minimal-json-0.9.4-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.minimal-json/minimal-json/0.9.4/d6e7dd22569de97c2697a4af301a623f35028972/minimal-json-0.9.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.8/38c6cb5218afd414465ab6458fbcfeb1c947e808/xz-1.8-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.8/c4f7d054303948eb6a4066194253886c8af07128/xz-1.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/guru.nidi/graphviz-java-all-j2v8/0.18.0/58de5ada4d8587da87d3c208132f256354940c2c/graphviz-java-all-j2v8-0.18.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/guru.nidi/graphviz-java/0.18.0/ae651f70c8bfc51bdb85150b40de4a7c9a749d4c/graphviz-java-0.18.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/guru.nidi/graphviz-java/0.18.0/27e31b967207b42f8efe93ae56bcd30cb8c039fe/graphviz-java-0.18.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.30/f2442e369a190089a2774920b5e73a4d4c1ef793/jcl-over-slf4j-1.7.30-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.30/cd92524ea19d27e5b94ecd251e1af729cffdfe15/jcl-over-slf4j-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/f9e7f2ae73c3ef9c375a325cea1ef1dcc2613579/jul-to-slf4j-1.7.30-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/d58bebff8cbf70ff52b59208586095f467656c30/jul-to-slf4j-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/ee0fca17b51f6e2dce503a3250ed77e171991305/mongo-java-driver-3.12.8-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.8/d9e12b2056cea964a3805558382e0d30596444c5/mongo-java-driver-3.12.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_macosx_x86_64/4.6.0/70fa3b2e113fb13a4515a981b857a4a6575aeb22/j2v8_macosx_x86_64-4.6.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_macosx_x86_64/4.6.0/863d30016246f6d7356c88eaf36c3e924a2ffd3c/j2v8_macosx_x86_64-4.6.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_linux_x86_64/4.6.0/e0168e46bfc13715d1b7b46504a8462754ed2f07/j2v8_linux_x86_64-4.6.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_linux_x86_64/4.6.0/e9714fbde87cf371071f6533824564e7499435fa/j2v8_linux_x86_64-4.6.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_win32_x86_64/4.6.0/8dbb6f4a125af8ed02927b0526900b356040dba9/j2v8_win32_x86_64-4.6.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_win32_x86_64/4.6.0/49e1cc812d34b6019d2cafc36c67cd599889b26b/j2v8_win32_x86_64-4.6.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_win32_x86/4.6.0/9a0d52d278d40ea29af831a3c96fb0b7497a8408/j2v8_win32_x86-4.6.0-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.eclipsesource.j2v8/j2v8_win32_x86/4.6.0/6b3844b935145691edfb2c674371c783df0804ab/j2v8_win32_x86-4.6.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.webjars.npm/viz.js-for-graphviz-java/2.1.3/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/viz.js-for-graphviz-java-2.1.3-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.webjars.npm/viz.js-for-graphviz-java/2.1.3/df2c18902a82dd03a7c2335923842e824b1e46a8/viz.js-for-graphviz-java-2.1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/guru.nidi.com.kitfox/svgSalamander/1.1.3/50f168b5bd6b362ccad5ebebb511b593842f093f/svgSalamander-1.1.3-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/guru.nidi.com.kitfox/svgSalamander/1.1.3/2834461bf9d561fbf8b8531503e5718c582ae800/svgSalamander-1.1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/net.arnx/nashorn-promise/0.1.1/96cc495e4bb583382894e4f69e7d46305fc02f90/nashorn-promise-0.1.1-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/net.arnx/nashorn-promise/0.1.1/3bae6bc4b167e0866dfb29aa9ff09ba55c6f0a52/nashorn-promise-0.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.3/efd2543e352e55ce5a685eed6db8af028b737905/commons-exec-1.3-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.3/8dfb9facd0830a27b1b5f29f84593f0aeee7773b/commons-exec-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_core/build/libs/ntro_core-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_core_jdk/build/libs/ntro_core_jdk-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app/build/libs/ntro_app-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app_jdk/build/libs/ntro_app_jdk-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app_fx/build/libs/ntro_app_fx-0.1.jar"/>
+</classpath>
