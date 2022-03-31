@@ -5,6 +5,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ScrollPane?>
+
+
 
 
 
@@ -14,21 +19,8 @@
 	id="vue-file-attente">
 	
 	
+	<Pane styleClass="petit-espace-vertical"/>
 	
-	<ImageView>
-		<image>
-			<Image url="@logo.png" />
-		</image>
-	</ImageView>
-	
-	<Button 
-	
-		fx:id="boutonOuvrirPartie"
-		text="%ouvrirPartie"
-		styleClass="gros-bouton"
-		id="bouton-ouvrir-partie">
-	
-	</Button>
 	
 	<Button
 		
@@ -39,14 +31,30 @@
 	
 	</Button>
 	
-	<Label
-		fx:id="labelMessage"
-		text="[labelMessage]"
-		styleClass="texte"
-		id="label-message">
+	<Pane VBox.vgrow="ALWAYS" styleClass="grand-espace-vertical"/>
+	
+	<HBox styleClass="conteneur,conteneur-parent">
+	
+		<Pane HBox.hgrow="ALWAYS" styleClass="grand-espace-vertical"/>
+
+	<ScrollPane HBox.hgrow="ALWAYS" fitToWidth="true">
+		<content>
+
+		<VBox styleClass="conteneur" fx:id="conteneurRendezVous" id="conteneur-rendez-vous">
+		</VBox>
+			
+		</content>
+	</ScrollPane>
 		
-	</Label>
+		<Pane HBox.hgrow="ALWAYS" styleClass="grand-espace-vertical"/>
+	
+	</HBox>
 	
 	
+	<Pane VBox.vgrow="ALWAYS" styleClass="grand-espace-vertical"/>
+	
+
 </VBox>
+
+
 

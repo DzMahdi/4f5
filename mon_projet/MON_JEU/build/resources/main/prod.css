@@ -1,6 +1,6 @@
 .conteneur {
     -fx-alignment: center;
-    -fx-background-color:gray;
+    -fx-background-color: black;
 }
 
 /* http://fxexperience.com/2011/12/styling-fx-buttons-with-css/ */
@@ -29,6 +29,7 @@
 .gros-titre{
     -fx-font-weight: bold;
     -fx-font-size: 4em;
+    -fx-text-fill: green;
 }
 
 #vue-racine {

@@ -13,6 +13,8 @@ import pong.frontal.taches.Navigation;
 import pong.frontal.vues.VueFileAttente;
 import pong.frontal.vues.VuePartie;
 import pong.frontal.vues.VueRacine;
+import pong.frontal.vues.fragments.FragmentPartieEnCours;
+import pong.frontal.vues.fragments.FragmentRendezVous;
 
 import static ca.ntro.app.tasks.frontend.FrontendTasks.*;
 
@@ -60,6 +62,12 @@ public class FrontalPong implements FrontendFx {
 		registrar.registerResources(NtroApp.locale("en"), "/chaine_en.properties");
 
 		registrar.registerView(VuePartie.class, "/partie.xml");
+		
+		
+		registrar.registerView(FragmentRendezVous.class, "/fragments/rendez_vous.xml");
+		registrar.registerView(FragmentPartieEnCours.class, "/fragments/partie_en_cours.xml");
+		
+		
 
 	}
 

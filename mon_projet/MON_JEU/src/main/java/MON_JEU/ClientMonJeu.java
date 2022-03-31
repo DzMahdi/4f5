@@ -6,9 +6,12 @@ import ca.ntro.app.frontend.FrontendRegistrarFx;
 import ca.ntro.app.messages.MessageRegistrar;
 import ca.ntro.app.models.ModelRegistrar;
 import mon_jeu.dorsal.DorsalDessin;
+import mon_jeu.dorsal.DorsalMonJeu;
 import mon_jeu.frontal.FrontalMonJeu;
+import mon_jeu.modeles.ModeleNomJoueur;
 import mon_jeu.modeles.MonModele;
 import mon_jeu.modeles.valeurs.MaValeur;
+import mon_jeu.modeles.valeurs.NomJoueur;
 
 
 public class ClientMonJeu implements NtroClientFx {
@@ -33,15 +36,15 @@ public class ClientMonJeu implements NtroClientFx {
 	@Override
 	public void registerModels(ModelRegistrar registrar) {
 
-		registrar.registerModel(MonModele.class);
+		registrar.registerModel(ModeleNomJoueur.class);
 
-		registrar.registerValue(MaValeur.class);
+		registrar.registerValue(NomJoueur.class);
 	}
 
 	@Override
 	public void registerBackend(BackendRegistrar registrar) {
 
-		registrar.registerBackend(new DorsalDessin());
+		registrar.registerBackend(new DorsalMonJeu());
 	}
 
 }

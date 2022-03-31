@@ -11,33 +11,35 @@ import ca.ntro.core.initialization.Ntro;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import pong.frontal.evenements.EvtAfficherPartie;
+import pong.frontal.vues.fragments.FragmentRendezVous;
 import pong.messages.MsgAjouterRendezVous;
 
 public class VueFileAttente extends ViewFx {
 
-	@FXML
-	private Button boutonOuvrirPartie;
+	
 	
 	@FXML
 	private Button boutonAjouterRendezVous;
-
+	
 	@FXML
-	private Label labelMessage;
+	private VBox conteneurRendezVous;
 
+	
 
 	
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		Ntro.assertNotNull("boutonOuvrirPartie", boutonOuvrirPartie);
+		
 		
 		Ntro.assertNotNull("boutonAjouterRendezvous", boutonAjouterRendezVous);
 		
-		Ntro.assertNotNull("labelMessage", labelMessage);
+		Ntro.assertNotNull("conteneurRendezVous", conteneurRendezVous);
 
-		installerEvtAfficherPartie();
 		
 		installerMsgAjouterRendezVous();
 	}
@@ -77,25 +79,33 @@ public class VueFileAttente extends ViewFx {
 		
 		return Ntro.random().choice(choixDeNoms);
 	}
-
-	private void installerEvtAfficherPartie() {
-
-		
-		EvtAfficherPartie evtNtro = NtroApp.newEvent(EvtAfficherPartie.class);
-		
-		boutonOuvrirPartie.setOnAction(evtFx -> {
-
-			evtNtro.trigger();
-			
-			System.out.println("[VueFileAttente] clic: " + evtFx.getEventType());
-		});
-
+	
+	
+	public void viderListeRendezVous() {
+		conteneurRendezVous.getChildren().clear();
 	}
-
-	public void afficherMessage(String message) {
+	
+	private Pane petitEspaceVertical() {
 		
-		labelMessage.setText(message);
+		Pane petitEspaceVertical = new Pane();
+		
+		petitEspaceVertical.getStyleClass().add("petit-espace-vertical");
+		
+		return petitEspaceVertical;
 		
 	}
+	
+	
+	public void ajouterRendezVous(FragmentRendezVous fragmentRendezVous) {
+		
+		conteneurRendezVous.getChildren().add(fragmentRendezVous.rootNode());
+		
+		conteneurRendezVous.getChildren().add(petitEspaceVertical());
+		
+	}
+
+	
+
+
 
 }

@@ -6,10 +6,10 @@ mon_jeu/modeles/MonModele.java
  mon_jeu.modeles.MonModele
 mon_jeu/modeles/valeurs/MaValeur.java
  mon_jeu.modeles.valeurs.MaValeur
-mon_jeu/ClientMonJeu.java
- mon_jeu.ClientMonJeu
-mon_jeu/dorsal/DorsalDessin.java
- mon_jeu.dorsal.DorsalDessin
+mon_jeu/frontal/FrontalMonJeu.java
+ mon_jeu.frontal.FrontalMonJeu
+mon_jeu/frontal/vues/VueFileAttente.java
+ mon_jeu.frontal.vues.VueFileAttente
 mon_jeu/frontal/evenements/EvtAfficherFileAttente.java
  mon_jeu.frontal.evenements.EvtAfficherFileAttente
 mon_jeu/frontal/vues/VueMaVue.java
@@ -18,9 +18,15 @@ mon_jeu/frontal/evenements/EvtAfficherVueMaVue.java
  mon_jeu.frontal.evenements.EvtAfficherVueMaVue
 mon_jeu/frontal/vues/VueRacine.java
  mon_jeu.frontal.vues.VueRacine
-mon_jeu/frontal/vues/VueFileAttente.java
- mon_jeu.frontal.vues.VueFileAttente
+mon_jeu/modeles/valeurs/NomJoueur.java
+ mon_jeu.modeles.valeurs.NomJoueur
+mon_jeu/dorsal/DorsalMonJeu.java
+ mon_jeu.dorsal.DorsalMonJeu
+mon_jeu/modeles/ModeleNomJoueur.java
+ mon_jeu.modeles.ModeleNomJoueur
+mon_jeu/ClientMonJeu.java
+ mon_jeu.ClientMonJeu
+mon_jeu/dorsal/DorsalDessin.java
+ mon_jeu.dorsal.DorsalDessin
 mon_jeu/dorsal/taches/InitialiserModeles.java
  mon_jeu.dorsal.taches.InitialiserModeles
-mon_jeu/frontal/FrontalMonJeu.java
- mon_jeu.frontal.FrontalMonJeu
