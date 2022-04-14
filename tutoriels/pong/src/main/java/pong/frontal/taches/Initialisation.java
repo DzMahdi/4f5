@@ -7,6 +7,7 @@ import ca.ntro.app.services.Window;
 import ca.ntro.app.tasks.frontend.FrontendTasks;
 import jsweet.util.StringTypes.input;
 import pong.frontal.vues.VueFileAttente;
+import pong.frontal.vues.VuePartie;
 import pong.frontal.vues.VueRacine;
 
 public class Initialisation {
@@ -24,11 +25,31 @@ public class Initialisation {
 				
 				creerVueFileAttente(subTasks);
 				installerVueFileAttente(subTasks);
+				
+				creerVuePartie(subTasks);
 			});
 		
 		
 		
 		
+	}
+	
+	private static void creerVuePartie(FrontendTasks tasks) {
+
+		tasks.task(create(VuePartie.class))
+
+				.waitsFor(viewLoader(VuePartie.class))
+
+				.thenExecutesAndReturnsValue(inputs -> {
+
+					ViewLoader<VuePartie> viewLoader = inputs.get(viewLoader(VuePartie.class));
+
+					VuePartie vuePartie = viewLoader.createView();
+
+					return vuePartie;
+
+				});
+
 	}
 
 	private static void afficherFenetre(FrontendTasks tasks) {

@@ -1,22 +1,21 @@
 package pong.frontal.vues.controles;
 
-import ca.ntro.app.views.controls.ResizableCanvas;
+import ca.ntro.app.views.controls.canvas.World2dCanvas;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 
-public class CanvasPartie extends ResizableCanvas {
+public class CanvasPartie extends World2dCanvas {
 
 	private Image logo;
 
 	@Override
 	protected void initialize() {
 
-		setEpsilon(1);
+		setEpsilon(2);
 
 		logo = new Image("/logo.png");
 
 	}
-
+/*
 	@Override
 	protected void onInitialSize(int initialWidth, int initialHeight) {
 
@@ -63,5 +62,5 @@ public class CanvasPartie extends ResizableCanvas {
 		
 
 	}
-
+*/
 }
