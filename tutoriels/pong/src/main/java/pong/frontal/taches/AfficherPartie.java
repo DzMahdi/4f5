@@ -4,7 +4,7 @@ import static ca.ntro.app.tasks.frontend.FrontendTasks.*;
 
 import ca.ntro.app.tasks.frontend.FrontendTasks;
 import ca.ntro.core.clock.Tick;
-import frontal.vues.donnees.DonneesVuePartie;
+import pong.frontal.vues.donnees.DonneesVuePartie;
 import pong.frontal.vues.VuePartie;
 
 public class AfficherPartie {

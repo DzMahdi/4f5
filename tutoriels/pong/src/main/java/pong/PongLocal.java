@@ -6,31 +6,19 @@ import ca.ntro.app.frontend.FrontendRegistrarFx;
 import ca.ntro.app.messages.MessageRegistrar;
 import ca.ntro.app.models.ModelRegistrar;
 import pong.dorsal.DorsalPong;
-import pong.dorsal.DorsalPongDistant;
 import pong.frontal.FrontalPong;
-import pong.modeles.enums.Cadran;
 
-public class ClientPong implements NtroClientFx {
+public class PongLocal implements NtroClientFx {
 
 	public static void main(String[] args) {
 
-		
-		
-		if(args.length > 0) {
-			Session.nomUsager = args[0];
-		}
-		
-		if(args.length > 1) {
-			Session.cadran = Cadran.valueOf(args[1]);
-		}
-		
 		NtroClientFx.launch(args);
 	}
 
 	@Override
 	public void registerBackend(BackendRegistrar registrar) {
 
-		registrar.registerBackend(new DorsalPongDistant());
+		registrar.registerBackend(new DorsalPong());
 
 	}
 

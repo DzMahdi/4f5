@@ -5,7 +5,7 @@ import ca.ntro.app.frontend.ViewRegistrarFx;
 import ca.ntro.app.frontend.events.EventRegistrar;
 import ca.ntro.app.services.Window;
 import ca.ntro.app.tasks.frontend.FrontendTasks;
-import frontal.vues.donnees.DonneesVuePartie;
+import pong.frontal.vues.donnees.DonneesVuePartie;
 import pong.frontal.evenements.EvtAfficherFileAttente;
 import pong.frontal.evenements.EvtAfficherPartie;
 import pong.frontal.taches.AfficherFileAttente;

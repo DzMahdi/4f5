@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import pong.Session;
 import pong.frontal.evenements.EvtAfficherPartie;
 import pong.frontal.vues.fragments.FragmentRendezVous;
 import pong.messages.MsgAjouterRendezVous;
@@ -51,7 +52,7 @@ public class VueFileAttente extends ViewFx {
 		boutonAjouterRendezVous.setOnAction(evtFx -> {
 			
 			
-			msgAjouterRendezVous.setNomPremierJoueur(nomAleatoire());
+			msgAjouterRendezVous.setNomPremierJoueur(Session.nomUsager);
 			
 			msgAjouterRendezVous.send();
 		

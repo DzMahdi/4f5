@@ -1,4 +1,4 @@
-package frontal.vues.donnees;
+package pong.frontal.vues.donnees;
 
 import ca.ntro.app.frontend.ViewData;
 import ca.ntro.core.initialization.Ntro;
