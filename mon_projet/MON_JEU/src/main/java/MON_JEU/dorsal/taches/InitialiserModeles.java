@@ -1,8 +1,7 @@
 package mon_jeu.dorsal.taches;
 
 import ca.ntro.app.tasks.backend.BackendTasks;
-import mon_jeu.modeles.ModeleNomJoueur;
-import mon_jeu.modeles.MonModele;
+import mon_jeu.modeles.MonModeleProfil;
 
 import static ca.ntro.app.tasks.backend.BackendTasks.*;
 
@@ -14,21 +13,21 @@ public class InitialiserModeles {
 		
 		      .contains(subTasks -> {
 		    	  
-					initialiserModeleNomJoueur(subTasks);
+					initialiserModeleProfil(subTasks);
 
 		      });
 	}
 
-	private static void initialiserModeleNomJoueur(BackendTasks tasks) {
-		tasks.task("initialiserModeleNomJoueur")
+	private static void initialiserModeleProfil(BackendTasks tasks) {
+		tasks.task("initialiserModeleProfil")
 
-		     .waitsFor(model(ModeleNomJoueur.class))
+		     .waitsFor(model(MonModeleProfil.class))
 		     
 		     .thenExecutes(inputs -> {
 
-		    	 ModeleNomJoueur nomJoueur = inputs.get(model(ModeleNomJoueur.class));
+		    	 MonModeleProfil modeleProfil = inputs.get(model(MonModeleProfil.class));
 
-		    	 nomJoueur.initialiser();
+		    	 modeleProfil.initialiser();
 
 		     });
 	}

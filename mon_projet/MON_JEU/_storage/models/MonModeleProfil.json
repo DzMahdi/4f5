@@ -1,0 +1,35 @@
+{
+  "_C": "MonModeleProfil",
+  "maListeJoueur": [
+    {
+      "_C": "ListeJoueur",
+      "nombrePartieJouer": 3,
+      "nomJoueur": "Mahdi",
+      "idJoueur": "1"
+    },
+    {
+      "_C": "ListeJoueur",
+      "nombrePartieJouer": 0,
+      "nomJoueur": "Rayane",
+      "idJoueur": "1"
+    },
+    {
+      "_C": "ListeJoueur",
+      "nombrePartieJouer": 0,
+      "nomJoueur": "Rayane",
+      "idJoueur": "1"
+    },
+    {
+      "_C": "ListeJoueur",
+      "nombrePartieJouer": 0,
+      "nomJoueur": "Hassan",
+      "idJoueur": "1"
+    },
+    {
+      "_C": "ListeJoueur",
+      "nombrePartieJouer": 0,
+      "nomJoueur": "Achraf",
+      "idJoueur": "1"
+    }
+  ]
+}

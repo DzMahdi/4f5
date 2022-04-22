@@ -29,23 +29,15 @@
 
     <ImageView id="logo">    
         <image>
-            <Image url="@logo.png" />
+            <Image url="@une_image.png" />
         </image>
     </ImageView>
 
     <Button 
-        fx:id="boutonOuvrirMaVue" 
-        text="%ouvrirMaVue"
+        fx:id="boutonOuvrirMaVueProfil" 
+        text="%ouvrirMaVueProfil"
         styleClass="gros-bouton"
         id="bouton-ouvrir-partie">
-    </Button>
-
-
-    <Button 
-        fx:id="boutonAjouterRendezVous" 
-        text="%ajouterRendezVous"
-        styleClass="gros-bouton"
-        id="boutonAjouterRendezVous">
     </Button>
 
     <Label 

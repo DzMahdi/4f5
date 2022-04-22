@@ -1,32 +1,32 @@
 package mon_jeu.frontal.taches;
 
-import mon_jeu.frontal.evenements.EvtAfficherVueMaVue;
 import mon_jeu.frontal.evenements.EvtAfficherFileAttente;
+import mon_jeu.frontal.evenements.EvtAfficherVueMaVueProfil;
 import mon_jeu.frontal.vues.VueFileAttente;
-import mon_jeu.frontal.vues.VueMaVue;
+import mon_jeu.frontal.vues.VueProfil;
 import mon_jeu.frontal.vues.VueRacine;
-import ca.ntro.app.frontend.ViewLoader;
 import ca.ntro.app.tasks.frontend.FrontendTasks;
 
 import static ca.ntro.app.tasks.frontend.FrontendTasks.*;
 
+import ca.ntro.app.frontend.ViewLoader;
 
 public class Navigation {
-	
+
 	public static void creerTaches(FrontendTasks tasks) {
 
 		tasks.taskGroup("Navigation")
-		
-		     .waitsFor("Initialisation")
 
-		     .andContains(subTasks -> {
+				.waitsFor("Initialisation")
 
-			     afficherVueMaVue(subTasks);
+				.andContains(subTasks -> {
 
-		         creerVueFileAttente(subTasks);
-			     afficherVueFileAttente(subTasks);
+					afficherMaVueProfil(subTasks);
 
-		     });
+					creerVueFileAttente(subTasks);
+					afficherVueFileAttente(subTasks);
+
+				});
 	}
 
 	private static void creerVueFileAttente(FrontendTasks tasks) {
@@ -62,19 +62,20 @@ public class Navigation {
 		     });
 	}
 
-	private static void afficherVueMaVue(FrontendTasks tasks) {
-
-		tasks.task("afficherVueMaVue")
+	private static void afficherMaVueProfil(FrontendTasks tasks) {
 		
-		      .waitsFor(event(EvtAfficherVueMaVue.class))
-		      
-		      .thenExecutes(inputs -> {
-		    	  
-		    	  VueRacine vueRacine = inputs.get(created(VueRacine.class));
-		    	  VueMaVue vueMaVue = inputs.get(created(VueMaVue.class));
-		    	  
-		    	  vueRacine.afficherSousVue(vueMaVue);
-
-		      });
+		tasks.task("afficherMaVueProfil")
+			.waitsFor(event(EvtAfficherVueMaVueProfil.class))
+			
+			.thenExecutes(inputs -> {
+				
+				VueRacine vueRacine = inputs.get(created(VueRacine.class));
+				VueProfil vueProfil = inputs.get(created(VueProfil.class));
+				
+				vueRacine.afficherSousVue(vueProfil);
+			});
+		
+		
 	}
+
 }

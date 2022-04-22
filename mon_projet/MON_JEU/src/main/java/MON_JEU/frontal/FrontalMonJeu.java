@@ -5,12 +5,13 @@ import ca.ntro.app.frontend.FrontendFx;
 import ca.ntro.app.frontend.ViewRegistrarFx;
 import ca.ntro.app.frontend.events.EventRegistrar;
 import ca.ntro.app.tasks.frontend.FrontendTasks;
-import mon_jeu.frontal.evenements.EvtAfficherVueMaVue;
+import mon_jeu.frontal.evenements.EvtAfficherVueMaVueProfil;
 import mon_jeu.frontal.evenements.EvtAfficherFileAttente;
+import mon_jeu.frontal.taches.AfficherProfil;
 import mon_jeu.frontal.taches.Initialisation;
 import mon_jeu.frontal.taches.Navigation;
 import mon_jeu.frontal.vues.VueFileAttente;
-import mon_jeu.frontal.vues.VueMaVue;
+import mon_jeu.frontal.vues.VueProfil;
 import mon_jeu.frontal.vues.VueRacine;
 
 
@@ -21,12 +22,13 @@ public class FrontalMonJeu implements FrontendFx {
 		
 		Initialisation.creerTaches(tasks);
 		Navigation.creerTaches(tasks);
+		AfficherProfil.creerTaches(tasks);
 
 	}
 
 	@Override
 	public void registerEvents(EventRegistrar registrar) {
-		registrar.registerEvent(EvtAfficherVueMaVue.class);
+		registrar.registerEvent(EvtAfficherVueMaVueProfil.class);
 		registrar.registerEvent(EvtAfficherFileAttente.class);
 	}
 
@@ -40,7 +42,7 @@ public class FrontalMonJeu implements FrontendFx {
 		
 		registrar.registerView(VueRacine.class, "/racine.xml");
 		registrar.registerView(VueFileAttente.class, "/file_attente.xml");
-		registrar.registerView(VueMaVue.class, "/ma_vue.xml");
+		registrar.registerView(VueProfil.class, "/profil.xml");
 	}
 
 	@Override

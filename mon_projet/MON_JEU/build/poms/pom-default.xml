@@ -28,7 +28,7 @@
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
-      <artifactId>javafx-fxml</artifactId>
+      <artifactId>javafx-base</artifactId>
       <version>17</version>
       <classifier>win</classifier>
       <scope>runtime</scope>
@@ -42,7 +42,7 @@
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
-      <artifactId>javafx-base</artifactId>
+      <artifactId>javafx-fxml</artifactId>
       <version>17</version>
       <classifier>win</classifier>
       <scope>runtime</scope>

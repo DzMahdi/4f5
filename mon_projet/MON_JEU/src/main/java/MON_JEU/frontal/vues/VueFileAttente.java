@@ -9,16 +9,13 @@ import ca.ntro.core.initialization.Ntro;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import mon_jeu.frontal.evenements.EvtAfficherVueMaVue;
+import mon_jeu.frontal.evenements.EvtAfficherVueMaVueProfil;
 
 public class VueFileAttente extends ViewFx {
 	
 	
 	@FXML
-	private Button boutonOuvrirMaVue;
-
-	@FXML
-	private Button boutonAjouterRendezVous;
+	private Button boutonOuvrirMaVueProfil;
 
 	@FXML
 	private Label labelMessage;
@@ -26,18 +23,17 @@ public class VueFileAttente extends ViewFx {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
-		Ntro.assertNotNull("boutonOuvrirMaVue", boutonOuvrirMaVue);
-		Ntro.assertNotNull("boutonAjouterRendezVous", boutonAjouterRendezVous);
+		Ntro.assertNotNull("boutonOuvrirMaVueProfil", boutonOuvrirMaVueProfil);
 		Ntro.assertNotNull("labelMessage", labelMessage);
 
-		installerEvtAfficherPartie();
+		installerEvtAfficherProfil();
 	}
 
-	private void installerEvtAfficherPartie() {
+	private void installerEvtAfficherProfil() {
 		
-		EvtAfficherVueMaVue evtNtro = NtroApp.newEvent(EvtAfficherVueMaVue.class);
+		EvtAfficherVueMaVueProfil evtNtro = NtroApp.newEvent(EvtAfficherVueMaVueProfil.class);
 
-		boutonOuvrirMaVue.setOnAction(evtFx -> {
+		boutonOuvrirMaVueProfil.setOnAction(evtFx -> {
 			
 			evtNtro.trigger();
 		});

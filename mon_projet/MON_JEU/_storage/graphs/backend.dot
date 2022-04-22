@@ -7,9 +7,21 @@ graph ["margin"="40","style"="invis"]
 subgraph "cluster_InitialiserModeles" {
 edge ["dir"="forward"]
 graph ["rankdir"="LR","label"="InitialiserModeles","style"="filled","fillcolor"="gray","penwidth"="3.0","fontsize"="18.0"]
-"InitialiserModeles_model[ModeleNomJoueur]" ["label"="model[ModeleNomJoueur]","style"="filled","fillcolor"="white"]
-"InitialiserModeles_initialiserModeleNomJoueur" ["label"="initialiserModeleNomJoueur","style"="filled","fillcolor"="white"]
+"InitialiserModeles_model[MonModeleProfil]" ["label"="model[MonModeleProfil]","style"="filled","fillcolor"="white"]
+"InitialiserModeles_initialiserModeleProfil" ["label"="initialiserModeleProfil","style"="filled","fillcolor"="white"]
 }
 }
-"InitialiserModeles_model[ModeleNomJoueur]" -> "InitialiserModeles_initialiserModeleNomJoueur" ["label"=""]
+subgraph "cluster_ModifierProfil__container" {
+edge ["dir"="none"]
+graph ["margin"="40","style"="invis"]
+subgraph "cluster_ModifierProfil" {
+edge ["dir"="forward"]
+graph ["rankdir"="LR","label"="ModifierProfil","style"="filled","fillcolor"="gray","penwidth"="3.0","fontsize"="18.0"]
+"ModifierProfil_message[MsgAjouterJoueur]" ["label"="message[MsgAjouterJoueur]","style"="filled","fillcolor"="white"]
+"ModifierProfil_ajouterJoueur" ["label"="ajouterJoueur","style"="filled","fillcolor"="white"]
+}
+}
+"InitialiserModeles_model[MonModeleProfil]" -> "InitialiserModeles_initialiserModeleProfil" ["label"=""]
+"InitialiserModeles_model[MonModeleProfil]" -> "ModifierProfil_message[MsgAjouterJoueur]" ["label"="","ltail"="cluster_InitialiserModeles","lhead"="cluster_ModifierProfil","penwidth"="3"]
+"ModifierProfil_message[MsgAjouterJoueur]" -> "ModifierProfil_ajouterJoueur" ["label"=""]
 }

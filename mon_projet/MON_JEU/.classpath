@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -13,6 +12,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/">
 		<accessrules>
 			<accessrule kind="accessible" pattern="javafx/**"/>
@@ -38,17 +38,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/2ae36181c0f4322481ced656821e0f792407b114/javafx-media-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/6012cc30ced1539f167b64959cb9d6a4283f7aa7/javafx-media-17-win.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/524e01d068fbef60d149127a725920969d2e2045/javafx-controls-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/efc0f4edde079c22987064922530c67fa1350a9b/javafx-controls-17-win.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/524e01d068fbef60d149127a725920969d2e2045/javafx-controls-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/7116001b777530c89e5c7381d39a2c9268f71e7e/javafx-controls-17.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/2ae36181c0f4322481ced656821e0f792407b114/javafx-media-17-sources.jar" kind="lib" path="C:/Users/Mahdi/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/6012cc30ced1539f167b64959cb9d6a4283f7aa7/javafx-media-17-win.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -203,9 +203,9 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_core/build/libs/ntro_core-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_core_jdk/build/libs/ntro_core_jdk-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app/build/libs/ntro_app-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app_jdk/build/libs/ntro_app_jdk-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_bg9ts6km9oyk57llyjk3e8suj/ntro/ntro_app_fx/build/libs/ntro_app_fx-0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_awkxkg8lfxaj57rxrzo76zh4i/ntro/ntro_core/build/libs/ntro_core-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_awkxkg8lfxaj57rxrzo76zh4i/ntro/ntro_core_jdk/build/libs/ntro_core_jdk-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_awkxkg8lfxaj57rxrzo76zh4i/ntro/ntro_app/build/libs/ntro_app-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_awkxkg8lfxaj57rxrzo76zh4i/ntro/ntro_app_jdk/build/libs/ntro_app_jdk-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mahdi/Desktop/4f5_mahdi_aggoun/4f5/mon_projet/.gradle/vcs-1/ntro_awkxkg8lfxaj57rxrzo76zh4i/ntro/ntro_app_fx/build/libs/ntro_app_fx-0.8.jar"/>
 </classpath>

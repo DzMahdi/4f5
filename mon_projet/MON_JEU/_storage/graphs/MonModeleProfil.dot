@@ -1,0 +1,14 @@
+digraph "MonModeleProfil" {
+graph ["rankdir"="LR","compound"="true","ranksep"="1.0","nodesep"="1.0"]
+"/" ["label"="<_C>MonModeleProfil|{maListeJoueur|{{0|<maListeJoueur__V_0_0>}|{1|<maListeJoueur__V_1_1>}|{2|<maListeJoueur__V_2_2>}|{3|<maListeJoueur__V_3_3>}|{4|<maListeJoueur__V_4_4>}}}","style"="filled","fillcolor"="white","shape"="record"]
+"/maListeJoueur/0" ["label"="<_C>ListeJoueur|{nombrePartieJouer|3}|{nomJoueur|\"Mahdi\"}|{idJoueur|\"1\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/maListeJoueur/1" ["label"="<_C>ListeJoueur|{nombrePartieJouer|0}|{nomJoueur|\"Rayane\"}|{idJoueur|\"1\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/maListeJoueur/2" ["label"="<_C>ListeJoueur|{nombrePartieJouer|0}|{nomJoueur|\"Rayane\"}|{idJoueur|\"1\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/maListeJoueur/3" ["label"="<_C>ListeJoueur|{nombrePartieJouer|0}|{nomJoueur|\"Hassan\"}|{idJoueur|\"1\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/maListeJoueur/4" ["label"="<_C>ListeJoueur|{nombrePartieJouer|0}|{nomJoueur|\"Achraf\"}|{idJoueur|\"1\"}","style"="filled","fillcolor"="white","shape"="record"]
+"/":"maListeJoueur__V_4_4":c -> "/maListeJoueur/4":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"maListeJoueur__V_3_3":c -> "/maListeJoueur/3":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"maListeJoueur__V_2_2":c -> "/maListeJoueur/2":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"maListeJoueur__V_1_1":c -> "/maListeJoueur/1":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+"/":"maListeJoueur__V_0_0":c -> "/maListeJoueur/0":"_C" ["tailclip"="false","arrowtail"="dot","dir"="both","label"=""]
+}
